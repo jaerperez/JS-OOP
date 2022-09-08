@@ -30,3 +30,33 @@ const juanita = new Student(
     "Curso de Creación de Personajes",
   ],
 );
+
+juanita.aprobarCurso('Matematicas de alejandro');
+
+console.log('Juanita', juanita);
+console.log('Natalia', natalia);
+console.log('Student', Student);
+
+class student2 {
+  constructor({ name, age, cursosAprobados }) {
+    this.name = name;
+    this.age = age;
+    this.cursosAprobados = cursosAprobados;
+  }
+
+  aprobarCurso(nuevoCursito) {
+    this.cursosAprobados.push(nuevoCursito)
+  }
+
+}
+
+const miguelito = new student2({
+  name: 'miguel',
+  cursosAprobados: [
+    'curso 1',
+    'Curso 2'
+
+  ],
+  age: 28,
+}
+)
